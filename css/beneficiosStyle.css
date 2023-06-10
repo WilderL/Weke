@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #4f4aa6;
+    /*No margen*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+.header-title {
+    margin-left: 290px;
+    margin-right: 100px;
+    color: aliceblue;
+}
+  
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
