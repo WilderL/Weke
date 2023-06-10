@@ -1,76 +1,74 @@
-
-
-h2 { text-shadow: white;
-    color:#2ed573; /* Verde */
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 6rem;
-    
+body {
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    text-shadow: black;
-    color: #ffffff; /* Texto en blanco */
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 5rem;
-    text-align: center;
-}
-
-h3{
-    text-shadow: black;
-    color:#48ca95;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 3rem;
-}
-
-p{
-    color:#48ca95;
-    align-items: center;
-    
-}
-
-.imagenes{
-    float:left;
-    margin-right: 10px;
-	height: 150px;
-	width: 250px;
-    border-radius: 50%;
-}
-
-.imagen{
-    float: left;
-    width: 25%;
-    margin: 2%; 
-}
-
-.texto{
-    float: left;
-    width: 25%;
-    margin: 2%;
-}
-
-.button{
-    background-color: #20c997; /* verde*/
-    border: none;
-    color: #000000; /* negro */
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    float: right;
-}
-
-footer {
-    background-color: #8a4dff; /* Lila */
+.header {
+    background-color: #8a4dff;
     padding: 10px;
     text-align: center;
-    font-size: 14px;
-    color: #ffffff; /* Texto en blanco */
 }
 
-header {
-    background-color: #4f4aa6; /* Lila */
-    padding: 20px;
+.title {
+    color: white;
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #20c997;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: right;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.image-wrapper {
     text-align: center;
-    border: none;
+    margin: 10px;
+    position: relative;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    pointer-events: none; /* Evitar que la imagen interrumpa el clic en el nombre */
+}
+
+.image-name {
+    margin-top: 10px;
+    position: relative; /* Asegurar que el nombre aparezca por encima de la imagen */
+    z-index: 2; /* Colocar el nombre por encima del efecto de neón */
+}
+
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.6), rgba(0, 0, 0, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover img {
+    border-color: #00ff00;
+}
+
+.image-wrapper:hover::before {
+    opacity: 1;
 }
