@@ -1,0 +1,134 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Main_title{
+    background-color: #4f4aa6;
+    color: white;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    background-color: #2ed573;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: black;
+    background-color: aqua;
+}
+
+.box_1{
+    display: contents;
+}
+
+.column {
+    color: white;
+    align-content: center;
+    background: url(../image/background.avif) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.column h2{
+    text-align: center;
+}
+
+.container h2{
+    text-align: center;
+}
+
+.container h3{
+    text-align: center;
+    text-decoration: solid;
+}
+
+#Implementacion h2{
+    text-align: center;
+    text-decoration: underline #4f4aa6;
+}
+
+#Implementacion h3{
+    text-align: center;
+}
+
+.container1{
+    display: flex;
+
+}
+.box_2{
+    height: auto; 
+    border-radius: 20px;
+    background-color:#4f4aa6 ;
+    align-items: center;
+    text-align: center;
+    margin-inline: 20px;
+    padding-top: 40px;
+}
+
+.box_2 img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+#Efectos h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Container2{
+    display: flex;
+}
+
+.box_3{
+    height: auto; 
+    border-radius: 20px;
+    background-color:white ;
+    align-items: center;
+    text-align: center;
+    margin-inline: 20px;
+    padding-top: 40px;
+}
+
+.box_3 img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.container3{
+    display: flex;
+}
+
+.text1{
+    text-align: center;
+    background: url(../image/backgrund2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+
+}
+
+
