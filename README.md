@@ -8,7 +8,7 @@
 
  * Omnipresencia de IA: La inteligencia artificial es cada vez más presente en nuestras vidas, por lo que despertará curiosidad en personas de todas las edades que deseen comprender cómo funciona y cómo nos afecta.
 
- ![Una imagen](https://static.nuso.org/media/cache/a6/3d/a63da017dffd61038b2d6282db846e74.jpg =250x250)
+ ![Una imagen](https://static.nuso.org/media/cache/a6/3d/a63da017dffd61038b2d6282db846e74.jpg)
 
  * IA en acción: Al presentar la información de manera clara y comprensible, incluso para aquellos que no tienen conocimientos técnicos profundos, se fomenta la participación de usuarios de todas las edades.
 
