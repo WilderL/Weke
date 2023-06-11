@@ -194,6 +194,39 @@ nav ul li a {
     margin-top: 20px;
 }
 
+#juguetes p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container6 {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.box2 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    align-items: center;
+}
+  
+.box2:hover {
+    transform: scale(1.05);
+}
+
+.box2 img {
+    height: 150px;
+    width: auto;
+    align-items: center;
+}
+  
+
 #realidad_virtual h2 {
     text-align: center;
     color: black;
