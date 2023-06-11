@@ -12,3 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+window.onload = function() {
+  var robotHand = document.getElementById('robot-hand');
+  robotHand.addEventListener('mouseover', function() {
+    robotHand.style.transform = 'rotate(30deg)';
+  });
+
+  robotHand.addEventListener('mouseout', function() {
+    robotHand.style.transform = 'rotate(0deg)';
+  });
+};
