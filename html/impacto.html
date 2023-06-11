@@ -6,11 +6,25 @@
     <link rel="stylesheet" type="text/css" href="../css/style1.css">
     <style>
         /* Estilos personalizados para el video */
-        #explicacion iframe {
+          #explicacion {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #explicacion > div {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        #video-explicacion {
+            flex: 1;
+            max-width: 560px;
+        }
+
+        #video-explicacion iframe {
             width: 100%;
-            height: 450px;
+            height: 315px;
             border: none;
-            margin-bottom: 30px;
         }
 
         /* Estilos adicionales para hacer la sección de impacto positivo más llamativa */
@@ -96,6 +110,12 @@
         #negativo .image-container img:hover {
             transform: scale(1.1);
         }
+        #negativo ul li {
+            width: 200px;
+            margin: 10px;
+            font-family: Arial, sans-serif; /* Cambia la fuente a Arial */
+            font-size: 20px; /* Tamaño de fuente personalizado */
+        }
         #boton2 {
             position: fixed;
             bottom: 10px;
@@ -123,6 +143,79 @@
             object-fit: cover;
             border-radius: 50%;
         }
+        #gif-wrapper {
+            position: relative;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        #gif-wrapper img {
+            position: absolute;
+            bottom: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            animation: move 10s infinite linear;
+        }
+
+
+        /* Estilos CSS adicionales para el contenido */
+        #futuro {
+            padding: 20px;
+            background-color: #f2f2f2;
+            text-align: justify;
+            position: relative;
+            z-index: 1;
+        }
+
+        #futuro h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        #futuro p {
+            margin-bottom: 10px;
+        }
+
+        #futuro ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        #futuro li {
+            margin-bottom: 5px;
+        }
+   #walle {
+  position: relative;
+  animation: moveWalleRight 5s linear infinite;
+}
+
+#walle2 {
+  transform: scaleX(-1);
+  animation: moveWalleLeft 5s linear infinite;
+  position: absolute;
+  top: 620px; /* Ajusta el valor según la posición vertical deseada */
+  right: 1350px;
+}
+
+@keyframes moveWalleRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 200px); /* Ajusta el valor "-200px" según el ancho del gif */
+  }
+}
+
+@keyframes moveWalleLeft {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: calc(100% - 200px); /* Ajusta el valor "-200px" según el ancho del gif */
+  }
+}
     </style>
 </head>
 <body>
@@ -141,8 +234,11 @@
 </button>
 </div>
 </section>
+ <div id="gif-wrapper">
+        <img src="../image/walle.gif" alt="WALL-E GIF">
+    </div>
 
-    <section id="positivo">
+    <section id="positivo" style="background-image: url('../image/fondo3.jpg'); background-size: cover; background-position: center;">
         <h2>Impacto positivo de la Inteligencia Artificial</h2>
         <p>La inteligencia artificial ha generado un impacto significativo en diversas áreas:</p>
 
@@ -211,34 +307,64 @@
         </div>
     </section>
 
-    <section id="futuro">
-        <h2>Futuro de la Inteligencia Artificial</h2>
-        <p>El futuro de la inteligencia artificial es prometedor y plantea muchas posibilidades:</p>
+<section id="futuro" style="background-image: url('../image/fondo3.jpg'); background-size: cover; background-position: center;">
+    <img id="walle" src="../image/walle.gif" alt="WALL-E GIF">
 
-        <ul>
-            <li>El desarrollo de IA más avanzada, como la inteligencia artificial general, que puede realizar una amplia variedad de tareas cognitivas.</li>
-            <li>Avances en robótica y automatización que transformarán la industria y los servicios.</li>
-            <li>La integración de la IA en la vida cotidiana, con asistentes virtuales, hogares inteligentes y ciudades inteligentes.</li>
-            <li>El desarrollo de IA ética y transparente para abordar las preocupaciones actuales.</li>
-            <li>La colaboración entre humanos y máquinas para aprovechar el poder de la IA y mejorar nuestra calidad de vida.</li>
-        </ul>
-    </section>
+    <div id="futuro-content">
+        <h2>Impacto de la Inteligencia Artificial en línea</h2>
+        <p>El uso de inteligencia artificial (IA) en línea ha tenido un impacto significativo en diversos aspectos de nuestras vidas, desde el ámbito personal hasta el empresarial. Algunos ejemplos destacados de IA en línea incluyen:</p>
+
+        <ol>
+            <li>Motores de búsqueda: Los motores de búsqueda utilizan algoritmos de IA para proporcionar resultados relevantes y personalizados a las consultas de búsqueda.</li>
+            <li>Asistentes virtuales: Los asistentes virtuales utilizan IA para reconocer y comprender el lenguaje natural y brindar respuestas o ejecutar tareas específicas.</li>
+            <li>Sistemas de recomendación: Los sistemas de recomendación utilizan IA para analizar los datos de los usuarios y predecir sus preferencias, ofreciendo recomendaciones personalizadas.</li>
+            <li>Detección de fraudes: Las instituciones financieras y las plataformas de pago en línea utilizan IA para detectar patrones y anomalías en las transacciones y prevenir el fraude.</li>
+            <li>Chatbots: Los chatbots utilizan técnicas de IA para interactuar con los usuarios a través de chat en línea, brindando respuestas automáticas.</li>
+        </ol>
+
+        <p>A pesar de los beneficios, el uso de IA en línea también plantea ciertos riesgos y desafíos, tales como:</p>
+
+        <ol>
+            <li>Privacidad de los datos</li>
+            <li>Sesgos algorítmicos</li>
+            <li>Dependencia y desplazamiento de empleo</li>
+            <li>Manipulación y desinformación</li>
+        </ol>
+
+        <p>Es importante abordar estos riesgos y desafíos mediante la implementación de regulaciones adecuadas, la transparencia en el uso de algoritmos, la ética en el diseño de sistemas de IA y la educación sobre las implicaciones de la IA en línea.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div id="image-container">
+        <img id="image" src="../image/chat.jpg" alt="Imagen">
+    </div>
+    <div id="image-container2">
+        <img id="image2" src="../image/leo.jpg" alt="Imagen">
+    </div>
+    <img id="walle2" src="../image/walle.gif" alt="WALL-E GIF">
+</section>
     <button id="boton-subir"><img src="../image/flecha.png" alt="Botón de subir"></button>
 
     <section id="explicacion">
-        <h2>Breve Explicación del Impacto de la Inteligencia Artificial</h2>
-        <p>La inteligencia artificial ha tenido un impacto profundo en nuestra sociedad, transformando diversos aspectos de nuestras vidas. Ha mejorado la eficiencia, la precisión y la capacidad de realizar tareas complejas en numerosas áreas, como la medicina, la industria, el transporte, las finanzas y la educación.</p>
-        <p>Al mismo tiempo, la IA también plantea desafíos y preocupaciones, como la posible pérdida de empleos, la privacidad de los datos, los sesgos algorítmicos y las cuestiones éticas. Sin embargo, a medida que la IA continúa avanzando, se espera que su impacto positivo supere sus desafíos, con avances futuros que incluyan IA más avanzada, robótica y automatización, integración en la vida cotidiana y colaboración entre humanos y máquinas.</p>
-        <p>Para obtener más información sobre el impacto de la inteligencia artificial, puedes consultar los siguientes recursos:</p>
-        <ul>
-            <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6131790/">Artículo sobre el impacto de la IA en la medicina</a></li>
-            <li><a href="https://www.ejemplo2.com">Informe sobre los desafíos éticos de la IA</a></li>
-            <li><a href="https://www.ejemplo3.com">Video sobre el futuro de la IA y la robótica</a></li>
-        </ul>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/NSf3o-wxtQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div>
+            <h2>Estado actual de la Inteligencia Artificial</h2>
+            <p>La inteligencia artificial ha tenido un impacto profundo en nuestra sociedad, transformando diversos aspectos de nuestras vidas. Ha mejorado la eficiencia, la precisión y la capacidad de realizar tareas complejas en numerosas áreas, como la medicina, la industria, el transporte, las finanzas y la educación.</p>
+            <p>Al mismo tiempo, la IA también plantea desafíos y preocupaciones, como la posible pérdida de empleos, la privacidad de los datos, los sesgos algorítmicos y las cuestiones éticas. Sin embargo, a medida que la IA continúa avanzando, se espera que su impacto positivo supere sus desafíos, con avances futuros que incluyan IA más avanzada, robótica y automatización, integración en la vida cotidiana y colaboración entre humanos y máquinas.</p>
+            <p>Para obtener más información sobre el impacto de la inteligencia artificial, puedes consultar los siguientes recursos:</p>
+            <ul>
+                <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6131790/">Artículo sobre el impacto de la IA en la medicina</a></li>
+                <li><a href="https://www.itu.int/dms_pub/itu-t/oth/23/01/T23010000090001PDFE.pdf">Informe sobre los desafíos éticos de la IA</a></li>
+                <li><a href="https://www.youtube.com/watch?v=SliIYKnkDi0">Video sobre el futuro de la IA y la robótica</a></li>
+            </ul>
+        </div>
+        <div id="video-explicacion">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NSf3o-wxtQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </section>
     <footer>
-        <p>Derechos de autor &copy; 2023 | Todos los derechos reservados</p>
+        <p>Derechos de autor &copyWEKE; 2023 | Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
