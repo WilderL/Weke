@@ -1,5 +1,5 @@
 body {
-    font-family: Consolas, monaco, monospace;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #ffffff; /* Blanco */
@@ -210,3 +210,50 @@ footer {
     color: white;
     text-align: center;
 }  
+
+#etica {
+    align-items: center;
+    text-align: center;
+}
+
+#etica h2 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+    border: 5px solid #4f4aa6;
+    margin-top: 10px;
+}
+
+#etica p {
+    text-align: justify;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    align-items: center;
+}
+  
+.box2:hover {
+    transform: scale(1.05);
+}
+
+.box2 img {
+    height: 150px;
+    width: auto;
+    align-items: center;
+}
