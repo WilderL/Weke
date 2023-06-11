@@ -250,3 +250,39 @@ ul li {
 #futuro li {
     margin-bottom: 5px;
 }
+#image-container {
+    position: absolute;
+    top: 65%;
+    right: 200px;
+    transform: translateY(-50%);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center
+}
+
+#image-container2 {
+    position: absolute;
+    top: 65%;
+    right: 30px;
+    transform: translateY(-50%);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center

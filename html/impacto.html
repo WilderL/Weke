@@ -158,17 +158,6 @@
             animation: move 10s infinite linear;
         }
 
-        @keyframes move {
-            0% {
-                transform: translateX(0);
-            }
-            50% {
-                transform: translateX(calc(100% - 200px));
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
 
         /* Estilos CSS adicionales para el contenido */
         #futuro {
@@ -197,6 +186,36 @@
         #futuro li {
             margin-bottom: 5px;
         }
+   #walle {
+  position: relative;
+  animation: moveWalleRight 5s linear infinite;
+}
+
+#walle2 {
+  transform: scaleX(-1);
+  animation: moveWalleLeft 5s linear infinite;
+  position: absolute;
+  top: 620px; /* Ajusta el valor según la posición vertical deseada */
+  right: 1350px;
+}
+
+@keyframes moveWalleRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 200px); /* Ajusta el valor "-200px" según el ancho del gif */
+  }
+}
+
+@keyframes moveWalleLeft {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: calc(100% - 200px); /* Ajusta el valor "-200px" según el ancho del gif */
+  }
+}
     </style>
 </head>
 <body>
@@ -219,7 +238,7 @@
         <img src="../image/walle.gif" alt="WALL-E GIF">
     </div>
 
-    <section id="positivo">
+    <section id="positivo" style="background-image: url('../image/fondo3.jpg'); background-size: cover; background-position: center;">
         <h2>Impacto positivo de la Inteligencia Artificial</h2>
         <p>La inteligencia artificial ha generado un impacto significativo en diversas áreas:</p>
 
@@ -288,25 +307,44 @@
         </div>
     </section>
 
-<body>
-    <section id="futuro">
-        <img id="walle" src="../image/walle.gif" alt="WALL-E GIF">
+<section id="futuro" style="background-image: url('../image/fondo3.jpg'); background-size: cover; background-position: center;">
+    <img id="walle" src="../image/walle.gif" alt="WALL-E GIF">
 
-        <div id="futuro-content">
-            <h2>Futuro de la Inteligencia Artificial</h2>
-            <p>El futuro de la inteligencia artificial es prometedor y plantea muchas posibilidades:</p>
+    <div id="futuro-content">
+        <h2>Impacto de la Inteligencia Artificial en línea</h2>
+        <p>El uso de inteligencia artificial (IA) en línea ha tenido un impacto significativo en diversos aspectos de nuestras vidas, desde el ámbito personal hasta el empresarial. Algunos ejemplos destacados de IA en línea incluyen:</p>
 
-            <ul>
-                <li>El desarrollo de IA más avanzada, como la inteligencia artificial general, que puede realizar una amplia variedad de tareas cognitivas.</li>
-                <li>Avances en robótica y automatización que transformarán la industria y los servicios.</li>
-                <li>La integración de la IA en la vida cotidiana, con asistentes virtuales, hogares inteligentes y ciudades inteligentes.</li>
-                <li>El desarrollo de IA ética y transparente para abordar las preocupaciones actuales.</li>
-                <li>La colaboración entre humanos y máquinas para aprovechar el poder de la IA y mejorar nuestra calidad de vida.</li>
-            </ul>
-        </div>
-    </section>
-</body>
-</html>
+        <ol>
+            <li>Motores de búsqueda: Los motores de búsqueda utilizan algoritmos de IA para proporcionar resultados relevantes y personalizados a las consultas de búsqueda.</li>
+            <li>Asistentes virtuales: Los asistentes virtuales utilizan IA para reconocer y comprender el lenguaje natural y brindar respuestas o ejecutar tareas específicas.</li>
+            <li>Sistemas de recomendación: Los sistemas de recomendación utilizan IA para analizar los datos de los usuarios y predecir sus preferencias, ofreciendo recomendaciones personalizadas.</li>
+            <li>Detección de fraudes: Las instituciones financieras y las plataformas de pago en línea utilizan IA para detectar patrones y anomalías en las transacciones y prevenir el fraude.</li>
+            <li>Chatbots: Los chatbots utilizan técnicas de IA para interactuar con los usuarios a través de chat en línea, brindando respuestas automáticas.</li>
+        </ol>
+
+        <p>A pesar de los beneficios, el uso de IA en línea también plantea ciertos riesgos y desafíos, tales como:</p>
+
+        <ol>
+            <li>Privacidad de los datos</li>
+            <li>Sesgos algorítmicos</li>
+            <li>Dependencia y desplazamiento de empleo</li>
+            <li>Manipulación y desinformación</li>
+        </ol>
+
+        <p>Es importante abordar estos riesgos y desafíos mediante la implementación de regulaciones adecuadas, la transparencia en el uso de algoritmos, la ética en el diseño de sistemas de IA y la educación sobre las implicaciones de la IA en línea.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div id="image-container">
+        <img id="image" src="../image/chat.jpg" alt="Imagen">
+    </div>
+    <div id="image-container2">
+        <img id="image2" src="../image/leo.jpg" alt="Imagen">
+    </div>
+    <img id="walle2" src="../image/walle.gif" alt="WALL-E GIF">
+</section>
     <button id="boton-subir"><img src="../image/flecha.png" alt="Botón de subir"></button>
 
     <section id="explicacion">
