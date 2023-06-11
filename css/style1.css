@@ -101,3 +101,95 @@ ul li {
     object-fit: cover;
     border-radius: 50%;
 }
+#boton-subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-subir:hover {
+    transform: scale(1.1);
+}
+
+#boton-subir img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Walker+Bot&display=swap');
+
+#impacto {
+  position: relative;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+#imagen-impacto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#imagen-impacto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  #imagen-impacto {
+    background-image: url('../image/fondomano2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #imagen-impacto img {
+    display: none;
+  }
+}
+
+#titulo-impacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  z-index: 2;
+  font-family: 'Roboto', sans-serif;
+  left: 66%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+#titulo-impacto h2 {
+  font-size: 70px;
+  background-image: linear-gradient(to right, #8B008B, #00FF00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+}
+
+#titulo-impacto h2 span {
+  display: block;
+}

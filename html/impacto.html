@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="../js/script.js"></script>
     <title>Impacto de la Inteligencia Artificial</title>
     <link rel="stylesheet" type="text/css" href="../css/style1.css">
     <style>
@@ -95,21 +96,51 @@
         #negativo .image-container img:hover {
             transform: scale(1.1);
         }
+        #boton2 {
+            position: fixed;
+            bottom: 10px;
+            right: 210px;
+            width: 80px;
+            height: 80px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #boton2:hover {
+            transform: scale(1.1);
+        }
+
+        #boton2 img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Impacto de la Inteligencia Artificial</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#positivo">Impacto positivo</a></li>
-            <li><a href="#negativo">Impacto negativo</a></li>
-            <li><a href="#futuro">Futuro de la IA</a></li>
-            <li><a href="#explicacion">Breve Explicación</a></li>
-        </ul>
-    </nav>
+    <section id="impacto">
+  <div id="imagen-impacto">
+    <img src="../image/fondomano.jpg" alt="Imagen de impacto">
+  </div>
+  <div id="titulo-impacto">
+  <h2>
+    <span>Impacto de la</span>
+    <span>Inteligencia</span>
+    <span>Artificial</span>
+  </h2>
+  <button id="boton2" onclick="window.location.href='#impacto'" style="z-index: 2;">
+    <img src="../image/casita.png" alt="Botón de regresar">
+</button>
+</div>
+</section>
 
     <section id="positivo">
         <h2>Impacto positivo de la Inteligencia Artificial</h2>
@@ -192,6 +223,7 @@
             <li>La colaboración entre humanos y máquinas para aprovechar el poder de la IA y mejorar nuestra calidad de vida.</li>
         </ul>
     </section>
+    <button id="boton-subir"><img src="../image/flecha.png" alt="Botón de subir"></button>
 
     <section id="explicacion">
         <h2>Breve Explicación del Impacto de la Inteligencia Artificial</h2>
@@ -205,7 +237,6 @@
         </ul>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/NSf3o-wxtQ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
-
     <footer>
         <p>Derechos de autor &copy; 2023 | Todos los derechos reservados</p>
     </footer>
