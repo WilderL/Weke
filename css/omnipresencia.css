@@ -16,7 +16,6 @@ nav {
     background-color: #2ed573;
     text-align: center;
     padding: 10px;
-
 }
 
 nav ul {
@@ -80,7 +79,7 @@ a:hover{
 
 }
 .box_2{
-    height: 150px; 
+    height: auto; 
     border-radius: 20px;
     background-color:#4f4aa6 ;
     align-items: center;
@@ -94,5 +93,42 @@ a:hover{
     mix-blend-mode: multiply;
 }
 
+#Efectos h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Container2{
+    display: flex;
+}
+
+.box_3{
+    height: auto; 
+    border-radius: 20px;
+    background-color:white ;
+    align-items: center;
+    text-align: center;
+    margin-inline: 20px;
+    padding-top: 40px;
+}
+
+.box_3 img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.container3{
+    display: flex;
+}
+
+.text1{
+    text-align: center;
+    background: url(../image/backgrund2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+
+}
 
 
