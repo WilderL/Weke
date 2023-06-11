@@ -18,6 +18,7 @@ nav {
     background-color: #2ed573; /* Verde */
     padding: 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -102,7 +103,65 @@ nav ul li a {
     cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
     border-radius: 4px; /* Radio de borde */
 }
-  
+
+h4 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+    border: 5px solid #2ed573;
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    pointer-events: none; /* Evitar que la imagen interrumpa el clic en el nombre */
+}
+
+.image-name {
+    margin-top: 10px;
+    position: relative; /* Asegurar que el nombre aparezca por encima de la imagen */
+    z-index: 2; /* Colocar el nombre por encima del efecto de neón */
+}
+
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 255, 0, 0.6), rgba(0, 0, 0, 0));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover img {
+    border-color: #00ff00;
+}
+
+.image-wrapper:hover::before {
+    opacity: 1;
+}
+
 footer {
     margin-top: 20px;
     padding: 20px;
