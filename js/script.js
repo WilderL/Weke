@@ -23,3 +23,7 @@ window.onload = function() {
     robotHand.style.transform = 'rotate(0deg)';
   });
 };
+
+function redirigirPagina() {
+    window.location.href = '../html/home.html';
+  }
