@@ -221,14 +221,32 @@ nav ul li a {
     border-radius: 50%;
 }
 
+.text1 {
+    margin-top: 50px;
+}
+
+.text2 {
+    margin-top: 50px;
+}
+
 .text1 h2{
     text-align: center;
 }
 
 .text2 h2{
     text-align: center;
-
 }
+
+.text1 p {
+    text-align: justify;
+    font-weight: bold;
+}
+
+.text2 p {
+    text-align: justify;
+    font-weight: bold;
+}
+
 .container4{
     text-align: center;
     background: url(../image/IA_brain.jpg) no-repeat center;
