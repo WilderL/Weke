@@ -357,13 +357,55 @@
     </div>
     <img id="walle2" src="../image/walle.gif" alt="WALL-E GIF">
 </section>
-<section id="quieres-contribuir">
-  <h2>¿Quieres contribuir con la IA?</h2>
+<section id="quieres-contribuir" style="background-image: url('../image/fondo13.jpg'); background-size: cover; background-position: center;">
+  <h2>¿Quieres darnos tu opinión acerca de la IA?</h2>
   <button id="boton-robot" onclick="redirigirFormulario()">¡Haz clic aquí!</button>
 </section>
+<style>
+  h2 {
+    text-align: center;
+    font-family: "Cherry Hand", cursive;
+    font-size: 40px;
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    background-color: purple;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: green;
+  }
+  #boton-robot {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 21px;
+    text-align: center;
+    background-color: purple;
+    transition: background-color 0.3s;
+  }
+
+  #boton-robot:hover {
+    background-color: green;
+  }
+</style>
 <script>
   function redirigirFormulario() {
-    window.location.href = "https://www.tuformulario.com"; // Reemplaza con la URL de tu formulario
+    window.location.href = "../html/encuesta.html"; // Reemplaza con la URL de tu formulario
   }
 </script>
     <button id="boton-subir"><img src="../image/flecha.png" alt="Botón de subir"></button>
