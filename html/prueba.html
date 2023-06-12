@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Experiencia con IA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #333333;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea,
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .ai-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .ai-logos img {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .ai-logos img:hover {
+      transform: scale(1.1);
+    }
+
+    button {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555555;
+    }
+  </style>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var aiLogos = document.querySelectorAll('.ai-logos img');
+      var otherRadio = document.getElementById('other');
+      var otherText = document.getElementById('other-text');
+
+      // Agregar evento de clic a las imágenes de IA
+      aiLogos.forEach(function(logo) {
+        logo.addEventListener('click', function() {
+          // Desmarcar todas las imágenes
+          aiLogos.forEach(function(logo) {
+            logo.classList.remove('selected');
+          });
+
+          // Marcar la imagen seleccionada
+          this.classList.add('selected');
+
+          // Desmarcar la opción "Otra" si se seleccionó previamente
+          otherRadio.checked = false;
+          otherText.disabled = true;
+        });
+      });
+
+      // Agregar evento de clic al radio button "Otra"
+      otherRadio.addEventListener('click', function() {
+        // Desmarcar todas las imágenes
+        aiLogos.forEach(function(logo) {
+          logo.classList.remove('selected');
+        });
+
+        // Deshabilitar el campo de texto si no está seleccionado
+        otherText.disabled = !this.checked;
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Experiencia con IA</h1>
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; resize: vertical;">
+
+    <label for="experiencia">¿Cuál ha sido tu experiencia con la IA actualmente?</label>
+    <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+
+    <label>Califica tu experiencia:</label>
+    <div class="radio-group">
+      <label for="excelente">Excelente</label>
+      <input type="radio" id="excelente" name="calificacion" value="excelente" required>
+      <label for="bueno">Bueno</label>
+      <input type="radio" id="bueno" name="calificacion" value="bueno">
+      <label for="regular">Regular</label>
+      <input type="radio" id="regular" name="calificacion" value="regular">
+    </div>
+
+    <label>¿Recomendarías la IA a otras personas?</label>
+    <div class="checkbox-group">
+      <label for="recomendarSi">Sí</label>
+      <input type="checkbox" id="recomendarSi" name="recomendacion" value="si">
+      <label for="recomendarNo">No</label>
+      <input type="checkbox" id="recomendarNo" name="recomendacion" value="no">
+    </div>
+
+    <label>¿Has utilizado alguna de estas IA?</label>
+    <div class="ai-logos">
+      <label for="gpt3"><img src="gpt3.png" alt="GPT-3"></label>
+      <label for="imageai"><img src="imageai.png" alt="ImageAI"></label>
+      <label for="bard"><img src="../image/bard.jpg" alt="Bard"></label>
+      <label for="alexa"><img src="alexa.png" alt="Alexa"></label>
+      <label for="watson"><img src="watson.png" alt="Watson"></label>
+      <label for="other"><input type="radio" id="other" name="ia-utilizada" value="other"> Otra</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
