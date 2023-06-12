@@ -34,5 +34,5 @@
 # Enlace de la página Web
 
  Link: 
- | [<img src="https://github.com/WilderL/Weke/blob/developer/image/walle.gif?raw=true" width=115><br><sub>WALL-E, LA INTELIGENCIA ARTIFICIAL AL SERVICIO DE LA SOCIEDAD</sub>](https://infoiagt.000webhostapp.com/html/home.html) |
+ | ![giphy (2)](image/walle.gif) [<sub>WALL-E, LA INTELIGENCIA ARTIFICIAL AL SERVICIO DE LA SOCIEDAD</sub>](https://infoiagt.000webhostapp.com/html/home.html) |
  | :---: |
