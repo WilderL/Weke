@@ -30,3 +30,9 @@
  ## Autores
 | [<img src="https://avatars.githubusercontent.com/u/100391358?v=4" width=115><br><sub>Roi Rosales</sub>](https://github.com/1Roy1) | [<img src="https://avatars.githubusercontent.com/u/100639541?v=4" width=115><br><sub>Estuardo Gutierrez</sub>](https://github.com/EAGutierrez04) |  [<img src="https://avatars.githubusercontent.com/u/94020169?v=4" width=115><br><sub>Karol Castro</sub>](https://github.com/Karmaz-29) |  [<img src="https://avatars.githubusercontent.com/u/99896522?v=4" width=115><br><sub>Elisa Ajxup</sub>](https://github.com/LisAY22) |  [<img src="https://avatars.githubusercontent.com/u/47789929?v=4" width=115><br><sub>Wilder Menchú</sub>](https://github.com/WilderL) |
 | :---: | :---: | :---: | :---: | :---: |
+
+# Enlace de la página Web
+
+ Link: 
+ | [<img src="https://github.com/WilderL/Weke/blob/developer/image/walle.gif?raw=true" width=115><br><sub>WALL-E, LA INTELIGENCIA ARTIFICIAL AL SERVICIO DE LA SOCIEDAD</sub>](https://infoiagt.000webhostapp.com/html/home.html) |
+ | :---: |
