@@ -1,0 +1,318 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Main_title{
+    background-color: #4f4aa6;
+    color: white;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    background-color: #2ed573; /* Verde */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Texto en blanco */
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+  }
+  
+.column {
+    flex: 1; /*Indica que debe ocupar todo el espacio*/
+}
+  
+.column img {
+    width: 100%;
+    height: auto;
+}
+  
+.column h2 {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 100px;
+    color: #333;
+    font-size: 30px;
+    text-align: justify; 
+}
+
+.column p {
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#Implementacion h2{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+    border: 5px solid #4f4aa6;
+    margin-top: 10px;
+}
+
+#Implementacion p{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#Implementacion h3{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #2ed573;
+    text-decoration-thickness: 2px;
+}
+
+.container1{
+    display: flex;
+
+}
+.box_2{
+    height: auto; 
+    border-radius: 20px;
+    border: 1px solid #4f4aa6;
+    align-items: center;
+    text-align: center;
+    margin-inline: 15px;
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.box_2 img{
+    position: relative;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    width: 275px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+#Efectos h2{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+    border: 5px solid #4f4aa6;
+    margin-top: 10px;
+}
+
+#Efectos p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Container2{
+    display: flex;
+}
+
+.box_3{
+    height: auto; 
+    border-radius: 20px;
+    border: 1px solid #2ed573;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    margin-inline: 20px;
+    padding-top: 40px;
+}
+
+.box_3 img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.container3{
+    display: flex;
+}
+
+.text1{
+    text-align: center;
+    background: url(../image/backgrund2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+}
+
+.contenedor-imagen {
+    text-align: center;
+    background: url(../image/backgrund2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contenedor-imagen2 {
+    text-align: center;
+    background: url(../image/IA_brain.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor-texto {
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+  
+.imagen-autoajustable {
+    width: 3700px; /* Tamaño por defecto */
+    height: 2000px; /* Tamaño por defecto */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .imagen-autoajustable-primer {
+    width: 1000px; /* Tamaño por defecto */
+    height: 500px; /* Tamaño por defecto */
+    max-width: 100%;
+    margin-top: 10px;
+    height: auto;
+}
+
+#boton-subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton-subir:hover {
+    transform: scale(1.1);
+}
+
+#boton-subir img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.text1 {
+    margin-top: 50px;
+}
+
+.text2 {
+    margin-top: 50px;
+}
+
+.text1 h2{
+    text-align: center;
+}
+
+.text2 h2{
+    text-align: center;
+}
+
+.text1 p {
+    text-align: justify;
+    font-weight: bold;
+}
+
+.text2 p {
+    text-align: justify;
+    font-weight: bold;
+}
+
+.container4{
+    text-align: center;
+    background: url(../image/IA_brain.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.container4{
+    display: flex;
+}
+
+#boton2 {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  /* Opcionalmente, puedes usar "left" en lugar de "right" para posicionar el botón en la esquina superior izquierda */
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#boton2:hover {
+  transform: scale(1.1);
+}
+
+#boton2 img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+footer {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}  
