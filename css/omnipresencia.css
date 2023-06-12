@@ -174,9 +174,20 @@ nav ul li a {
     height: auto;
 }
 
+
 .contenedor-imagen2 {
     text-align: center;
     background: url(../image/IA_brain.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor-texto {
+    text-align: center;
     background-size: cover;
     background-attachment: fixed;
     color: black;
@@ -192,6 +203,14 @@ nav ul li a {
     max-width: 100%;
     height: auto;
   }
+
+  .imagen-autoajustable-primer {
+    width: 1000px; /* Tamaño por defecto */
+    height: 500px; /* Tamaño por defecto */
+    max-width: 100%;
+    margin-top: 10px;
+    height: auto;
+}
 
 #boton-subir {
     position: fixed;
