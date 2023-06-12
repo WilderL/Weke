@@ -117,17 +117,6 @@
       var aiLogos = document.querySelectorAll('.ai-logos img');
       var otherRadio = document.getElementById('other');
       var otherText = document.getElementById('other-text');
-      var form = document.getElementById('formulario');
-
-      form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Evitar el envío del formulario
-
-        // Mostrar mensaje de agradecimiento
-        alert('Gracias por tu contribución con la IA.');
-
-        // Restablecer el formulario
-        form.reset();
-
       // Agregar evento de clic a las imágenes de IA
       aiLogos.forEach(function(logo) {
         logo.addEventListener('click', function() {
@@ -199,8 +188,13 @@
     </div>
 
     <button type="submit">Enviar</button>
-    <button id="boton2" onclick="redirigirPagina()" style="z-index: 2;">
-    <img src="../image/casita.png" alt="Botón de regresar">
   </form>
+  <button id="boton2" onclick="redirigirPagina2()" style="z-index: 2;">
+    <img src="../image/casita.png" alt="Botón de regresar">
 </body>
+<script>
+  function redirigirPagina2() {
+    window.location.href = "../html/home.html"; // Reemplaza con la URL de tu formulario
+  }
+</script>
 </html>
