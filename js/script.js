@@ -25,5 +25,5 @@ window.onload = function() {
 };
 
 function redirigirPagina() {
-    window.location.href = '../html/home.html';
+    window.location.href = '../index.html';
   }
