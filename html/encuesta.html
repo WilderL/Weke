@@ -4,8 +4,10 @@
   <title>Formulario de Experiencia con IA</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      font-family: 'Arial', sans-serif;
+      background-image: url("../image/fondo11.jpg");
+      background-size: cover;
+      background-position: center;
       padding: 20px;
     }
 
@@ -36,6 +38,7 @@
       border: 1px solid #cccccc;
       border-radius: 5px;
       resize: vertical;
+      font-family: 'Arial', sans-serif; /* Estilo de fuente */
     }
 
     input[type="radio"],
@@ -81,12 +84,49 @@
     button:hover {
       background-color: #555555;
     }
+    #boton2 {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #boton2:hover {
+            transform: scale(1.1);
+        }
+
+        #boton2 img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
   </style>
    <script>
     document.addEventListener('DOMContentLoaded', function() {
       var aiLogos = document.querySelectorAll('.ai-logos img');
       var otherRadio = document.getElementById('other');
       var otherText = document.getElementById('other-text');
+      var form = document.getElementById('formulario');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el envío del formulario
+
+        // Mostrar mensaje de agradecimiento
+        alert('Gracias por tu contribución con la IA.');
+
+        // Restablecer el formulario
+        form.reset();
 
       // Agregar evento de clic a las imágenes de IA
       aiLogos.forEach(function(logo) {
@@ -125,7 +165,7 @@
     <input type="text" id="nombre" name="nombre" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 5px; resize: vertical;">
+    <input type="email" id="email" name="email" required>
 
     <label for="experiencia">¿Cuál ha sido tu experiencia con la IA actualmente?</label>
     <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
@@ -150,15 +190,17 @@
 
     <label>¿Has utilizado alguna de estas IA?</label>
     <div class="ai-logos">
-      <label for="gpt3"><img src="gpt3.png" alt="GPT-3"></label>
-      <label for="imageai"><img src="imageai.png" alt="ImageAI"></label>
+      <label for="gpt3"><img src="../image/chatgpt.jpg" alt="GPT-3"></label>
+      <label for="leonardoai"><img src="../image/leo.jpg" alt="LeonardoAI"></label>
       <label for="bard"><img src="../image/bard.jpg" alt="Bard"></label>
-      <label for="alexa"><img src="alexa.png" alt="Alexa"></label>
-      <label for="watson"><img src="watson.png" alt="Watson"></label>
+      <label for="alexa"><img src="../image/alexa-bt.webp" alt="Alexa"></label>
+      <label for="frase"><img src="../image/frase.jpg" alt="FraseAI"></label>
       <label for="other"><input type="radio" id="other" name="ia-utilizada" value="other"> Otra</label>
     </div>
 
     <button type="submit">Enviar</button>
+    <button id="boton2" onclick="redirigirPagina()" style="z-index: 2;">
+    <img src="../image/casita.png" alt="Botón de regresar">
   </form>
 </body>
 </html>

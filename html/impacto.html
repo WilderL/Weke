@@ -4,6 +4,7 @@
     <script src="../js/script.js"></script>
     <title>Impacto de la Inteligencia Artificial</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/style1.css">
     <style>
         /* Estilos personalizados para el video */
@@ -15,6 +16,13 @@
         #explicacion > div {
             flex: 1;
             margin-right: 20px;
+        }
+        p {
+  font-family: "Cherry Hand", cursive;
+}
+        #explicacion h2 {
+            font-family: 'thday Mom', cursive;
+            font-size: 52px;
         }
 
         #video-explicacion {
@@ -66,6 +74,9 @@
             text-align: center;
             transition: transform 0.3s ease-in-out;
         }
+        li {
+  font-family: "SimpleHandmade", cursive;
+}
 
         #positivo ul li:hover {
             transform: scale(1.1);
@@ -346,6 +357,15 @@
     </div>
     <img id="walle2" src="../image/walle.gif" alt="WALL-E GIF">
 </section>
+<section id="quieres-contribuir">
+  <h2>¿Quieres contribuir con la IA?</h2>
+  <button id="boton-robot" onclick="redirigirFormulario()">¡Haz clic aquí!</button>
+</section>
+<script>
+  function redirigirFormulario() {
+    window.location.href = "https://www.tuformulario.com"; // Reemplaza con la URL de tu formulario
+  }
+</script>
     <button id="boton-subir"><img src="../image/flecha.png" alt="Botón de subir"></button>
 
     <section id="explicacion">
