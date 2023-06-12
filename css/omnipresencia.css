@@ -131,6 +131,24 @@ a:hover{
 
 }
 
+.contenedor-imagen {
+    text-align: center;
+    background: url(../image/backgrund2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+}
+  
+.imagen-autoajustable {
+    width: 3700px; /* Tamaño por defecto */
+    height: 2000px; /* Tamaño por defecto */
+    max-width: 100%;
+    height: auto;
+  }
+
 #boton-subir {
     position: fixed;
     bottom: 20px;
